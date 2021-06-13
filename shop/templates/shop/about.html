@@ -1,0 +1,78 @@
+{% extends 'shop/base.html' %}
+{%block title%}
+About us
+{% endblock %}
+
+{% block body%}
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">My Cart</h1>
+      <p>This is a small clone of a E-Commerce Website.This needs your suggestions and contributions to make it better and more productive.</p>
+      
+    </div>
+  </div>
+
+   <!-- /container -->
+
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+{% endblock %}
+{% block js %}
+<script>
+  if (localStorage.getItem('cart') == null) {
+    var cart = {};
+  }
+  else {
+    cart = JSON.parse(localStorage.getItem('cart'));
+
+    updateCart(cart);
+
+  }
+
+  $('.cart').click(function () {
+    var name = "";
+    var idstr = this.id.toString();
+    if (cart[idstr] != undefined) {
+      qty = cart[idstr][0] + 1;
+      cart[idstr][0] = cart[idstr][0] + 1;
+
+    }
+    else {
+      qty = 1;
+      name = document.getElementById('name' + idstr).innerHTML;
+      price = document.getElementById('price' + idstr).innerHTML;
+      cart[idstr] = [qty, name, price];
+
+    }
+    updateCart(cart);
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+
+  });
+
+
+
+  function updateCart(cart) {
+    var sum = 0;
+    for (var item in cart) {
+      sum = sum + cart[item][0];
+     
+
+    }
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+
+    document.getElementById('cart').innerHTML = sum;
+   
+  }
+
+  
+
+</script>
+{% endblock %}

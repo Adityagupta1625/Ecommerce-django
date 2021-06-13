@@ -1,0 +1,130 @@
+{% extends 'shop/base.html' %}
+{%block title%}
+contact us
+{% endblock %}
+{% block css %} 
+#contact h1{
+    margin-top: 12px;
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+    font-size: 2.8rem;
+}
+#contact{
+    position: relative;
+}
+/* contact background image */
+
+.form-group{
+    width: 100%;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact-box label{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.2rem;
+    
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.2rem;
+    padding: 4px 12px;
+    margin: 4px;
+    border-radius: 8px;
+}
+/* styling button of form  */
+
+{% endblock %}
+{% block body%}
+<section id="contact">
+        <h1>Contact us</h1>
+        <div id="contact-box">
+
+            <form action="/shop/contact/" method="post">{% csrf_token %}
+                <div class="form-group">
+
+                    <label for="name">Name:</label>
+
+
+                    <input id="name" name="name" placeholder="Enter your Name">
+
+                </div>
+                <div class="form-group">
+                    <label for="name">Email-id:</label>
+                    <input id="Email-id" name="email" placeholder="Enter your Email-id">
+                </div>
+                <div class="form-group">
+                    <label for="name">Phone Number:</label>
+                    <input id="phonenumber" name="phonenumber" placeholder="Enter your phonenumber">
+                </div>
+                <div class="form-group">
+                    <label for="name">Your Question:</label>
+                    <textarea name="message" id="message" cols="20" rows="5"></textarea>
+                </div>
+                 <button class="btn btn-primary" type="submit" style="width:25%; border-radius:12px">
+                Submit
+                </button>
+            </form>
+        </div>
+           
+
+    </section>
+{% endblock %}
+{% block js%}
+<script>
+if (localStorage.getItem('cart') == null) {
+    var cart = {};
+  }
+  else {
+    cart = JSON.parse(localStorage.getItem('cart'));
+
+    updateCart(cart);
+
+  }
+
+  $('.cart').click(function () {
+    var name = "";
+    var idstr = this.id.toString();
+    if (cart[idstr] != undefined) {
+      qty = cart[idstr][0] + 1;
+      cart[idstr][0] = cart[idstr][0] + 1;
+
+    }
+    else {
+      qty = 1;
+      name = document.getElementById('name' + idstr).innerHTML;
+      price = document.getElementById('price' + idstr).innerHTML;
+      cart[idstr] = [qty, name, price];
+
+    }
+    updateCart(cart);
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+
+  });
+
+
+
+  function updateCart(cart) {
+    var sum = 0;
+    for (var item in cart) {
+      sum = sum + cart[item][0];
+     
+
+    }
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+
+    document.getElementById('cart').innerHTML = sum;
+   
+  }
+{% if thank %}
+alert('Thanks for contacting Us.We will reach you soon');
+document.location="/shop/contact/"
+{% endif %}
+</script>
+{%endblock%}
