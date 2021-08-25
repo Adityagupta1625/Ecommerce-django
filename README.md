@@ -16,11 +16,12 @@
 <li>A contact us page to share concerns</li>
 </ol>
 
-<h5> Link for the site is: https://ecomm-aditya.herokuapp.com/
-</h5>
+<h4> Link for the site is: https://ecomm-aditya.herokuapp.com/
+</h4>
+
 <h3>Installation: </h3>
 <p>You need to install first python in your system
-<br>
-Then you can use pip install Django to install django in your system<br>
-Then install all the required Packges as specified in requirements.txt using pip install command<br>
-You can clone this repositry using git clone: 
+<br><br>
+Then you can use pip install Django to install django in your system<br><br>
+Then install all the required Packges as specified in requirements.txt using pip install command<br><br>
+You can clone this repositry using git clone:https://github.com/Adityagupta1625/Ecommerce-django.git
