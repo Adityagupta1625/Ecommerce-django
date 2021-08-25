@@ -1,8 +1,26 @@
-# Ecommerce-django
+<h1> Ecommerce-django</h1>
+<p>This is a small clone of ecommerce website using Django. This is making use of paytm gateway Api to process payment requests and I have used the faceboook comments api too for comments,like and share in blog.I have hosted this web app using heroku and aws. Aws is primarilarly used for holding the static files. I have the cart written in local storage using javascript</p>
+<h3>Techonlogy Stack:</h3>
+<ul>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>Javascript</li>
+<li>Django</li>
+<li>Paytm Payment Api</li>
+<li>Facebook comments Plugin</li>
+</ul>
+<h3>Features: </h3>
+<ol>
+<li>Add items in cart and view it</li>
+<li>A tracking page for tracking orders using order id</li>
+<li>A contact us page to share concerns</li>
+</ol>
 
- Link for the site is: https://ecomm-aditya.herokuapp.com/
- 
- This site is Wriiten in Django with cart written with js using local storage of the device.
- I have make use of paytm payment gateway Api and facebook comments and share plugins in this in Blog Section.
- For hosting I make use of heroku and amazon s3 bucket for media files.
- 
+<h5> Link for the site is: https://ecomm-aditya.herokuapp.com/
+</h5>
+<h3>Installation: </h3>
+<p>You need to install first python in your system
+<br>
+Then you can use pip install Django to install django in your system<br>
+Then install all the required Packges as specified in requirements.txt using pip install command<br>
+You can clone this repositry using git clone: 
