@@ -22,6 +22,5 @@
 <h3>Installation: </h3>
 <p>You need to install first python in your system
 <br><br>
-Then you can use pip install Django to install django in your system<br><br>
 Then install all the required Packges as specified in requirements.txt using pip install command<br><br>
 You can clone this repositry using git clone:https://github.com/Adityagupta1625/Ecommerce-django.git
