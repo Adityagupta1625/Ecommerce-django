@@ -8,12 +8,15 @@
 <li>Django</li>
 <li>Paytm Payment Api</li>
 <li>Facebook comments Plugin</li>
+<li>AWS S3</li>
 </ul>
 <h3>Features: </h3>
 <ol>
 <li>Add items in cart and view it</li>
 <li>A tracking page for tracking orders using order id</li>
 <li>A contact us page to share concerns</li>
+<li>Paytment Gateway</li>
+<li>Comments on blog sections</li>
 </ol>
 
 <h4> Link for the site is: https://ecomm-aditya.herokuapp.com/
