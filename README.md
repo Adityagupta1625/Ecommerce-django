@@ -1,4 +1,4 @@
-<h1> Ecommerce-django</h1>
+<h1> MyCart</h1>
 <p>This is a small clone of ecommerce website using Django. This is making use of paytm gateway Api to process payment requests and I have used the faceboook comments api too for comments,like and share in blog.I have hosted this web app using heroku and aws. Aws is primarilarly used for holding the static files. I have the cart written in local storage using javascript</p>
 <h3>Techonlogy Stack:</h3>
 <ul>
