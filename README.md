@@ -1,29 +1,37 @@
-<h1> MyCart</h1>
-<p>This is a small clone of ecommerce website using Django. This is making use of paytm gateway Api to process payment requests and I have used the faceboook comments api too for comments,like and share in blog.I have hosted this web app using heroku and aws. Aws is primarilarly used for holding the static files. I have the cart written in local storage using javascript</p>
-<h3>Techonlogy Stack:</h3>
-<ul>
-<li>HTML5</li>
-<li>CSS3</li>
-<li>Javascript</li>
-<li>Django</li>
-<li>Paytm Payment Api</li>
-<li>Facebook comments Plugin</li>
-<li>AWS S3</li>
-</ul>
-<h3>Features: </h3>
-<ol>
-<li>Add items in cart and view it</li>
-<li>A tracking page for tracking orders using order id</li>
-<li>A contact us page to share concerns</li>
-<li>Paytment Gateway</li>
-<li>Comments on blog sections</li>
-</ol>
+# **MyCart** 
+### This is a small clone of ecommerce website.
 
-<h4> Link for the site is: https://ecomm-aditya.herokuapp.com/
-</h4>
+---
+## Features
+- A cart for adding and deleting items
+- Online Payment Integration 
+- Comments on blog section
+- Order tracking 
+- Contact us Section
 
-<h3>Installation: </h3>
-<p>You need to install first python in your system
-<br><br>
-Then install all the required Packges as specified in requirements.txt using pip install command<br><br>
-You can clone this repositry using git clone:https://github.com/Adityagupta1625/Ecommerce-django.git
+## Technology Stack
+1. HTML5
+2. CSS3
+3. JAVASCRIPT
+4. DJANGO
+5. PAYTM PAYEMENT API
+6. FACEBOOK COMMENTS PLUGIN
+7. HEROKU
+8. AWS
+
+## Live Link 
+- https://ecomm-aditya.herokuapp.com/
+
+## Learning Outcomes
+- Get familiar with working of backend system
+- Get to know about hosting using aws and heroku
+- Learn how to integrate payment gateway systems
+- Learn about how to create schemas and intreact with databases
+
+## Resources
+- Django <a href="https://docs.djangoproject.com/en/4.0/" target="blank"> docs </a>
+- Youtube tutorials by CodeWithHarry <a href="https://www.youtube.com/c/CodeWithHarry"> channel link </a>
+- Some random articles on google
+
+## Installation
+- git clone https://github.com/Adityagupta1625/Ecommerce-django.git
