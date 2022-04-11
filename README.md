@@ -10,14 +10,10 @@
 - Contact us Section
 
 ## Technology Stack
-1. HTML5
-2. CSS3
-3. JAVASCRIPT
-4. DJANGO
-5. PAYTM PAYEMENT API
-6. FACEBOOK COMMENTS PLUGIN
-7. HEROKU
-8. AWS
+- FrameWorks: Django
+- Programming Languages: Python, JavaScript
+- Hosting: Heroku
+- Cloud Storage: Aws
 
 ## Live Link 
 - https://ecomm-aditya.herokuapp.com/
